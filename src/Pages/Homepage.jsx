@@ -1,10 +1,10 @@
 import Header from "../Components/Header-Section/Header";
 import HeroSection from "../Components/Hero-sections/HeroSection";
 
-function Homepage() {
+function Homepage({ setOpen, open }) {
   return (
     <div>
-      <Header />
+      <Header setOpen={setOpen} open={open} />
       <>
         <HeroSection />
       </>

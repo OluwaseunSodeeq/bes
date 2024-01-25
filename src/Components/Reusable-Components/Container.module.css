@@ -11,6 +11,9 @@
   padding: 0px 104px;
 }
 
+.shadow {
+  box-shadow: 0px 4px 40px 0px rgba(127, 181, 230, 0.12);
+}
 @media (max-width: 1024px) {
   .sidePaddings {
     padding: 0px 50px;

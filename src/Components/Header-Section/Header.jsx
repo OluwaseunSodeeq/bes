@@ -2,24 +2,22 @@ import { Link } from "react-router-dom";
 import Button from "../Reusable-Components/Button";
 import Container from "../Reusable-Components/Container";
 import styles from "./Header.module.css";
-import { useState } from "react";
+// import { useState } from "react";
 
 // import Container from "./Components/Reusable-Components/Container";
 import Logo from "./Logo";
 import Nav from "./Nav";
 import Hamburger from "./Hamburger";
 
-function Header() {
-  const [open, setOpen] = useState(false);
-
+function Header({ setOpen, open }) {
   return (
-    <Container paddingType="sidePaddings">
+    <Container paddingType="sidePaddings" background="#fafbfc" shadow={true}>
       <div className={styles.header}>
-        <Logo />
+        <Logo setOpen={setOpen} />
         <Nav open={open} setOpen={setOpen} />
         <div className={styles.btnContainer}>
           <Link to="/contact">
-            <Button>
+            <Button background="#005CB7" color="#fff">
               Contact Us
               <span>
                 <svg

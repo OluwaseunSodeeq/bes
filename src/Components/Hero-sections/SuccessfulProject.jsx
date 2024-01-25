@@ -31,10 +31,12 @@ function SuccessfulProject() {
   return (
     <div className={styles.successfulProjectsImageDiv}>
       <Carousel
-        autoPlay={true}
-        autoPlaySpeed={3000}
         draggable={true}
+        swipeable={true}
         showDots={false}
+        autoPlaySpeed={3000}
+        autoPlay={true}
+        arrows={false}
         infinite
         pauseOnHover
         keyBoardControl={true}

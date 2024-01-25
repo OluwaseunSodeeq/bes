@@ -186,9 +186,22 @@ function CompanyContentDiv() {
                 onChange={(e) => setServices(e.target.value)}
               >
                 <option value="">Which of our services do you need?</option>
-                <option value="1">Which of our services do you need?</option>
-                <option value="2">Which of our services do you need?</option>
-                <option value="2">Which of our services do you need?</option>
+                <option value="Project Management Excellence">
+                  Project Management Excellence
+                </option>
+                <option value="Borehole Drilling Precision">
+                  Borehole Drilling Precision
+                </option>
+                <option value="Geotechnical Insights">
+                  Geotechnical Insights
+                </option>
+                <option value="Civil Engineering Mastery">
+                  Civil Engineering Mastery
+                </option>
+                <option value="Telecommunication Expertise">
+                  Telecommunication Expertise
+                </option>
+                <option value="Piling">Piling</option>
               </select>
               <span>
                 <svg

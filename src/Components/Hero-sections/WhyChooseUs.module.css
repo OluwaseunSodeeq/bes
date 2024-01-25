@@ -41,7 +41,7 @@
 
   display: flex;
   justify-content: space-between;
-  /* align-items: flex-start; */
+  align-items: flex-start;
 }
 .cardContent {
   margin-left: 16px;
@@ -66,7 +66,7 @@
 .icon {
   /* border: 2px solid red; */
   height: 50px;
-  margin-top: 20px;
+  /* margin-top: 20px; */
 }
 
 @media (max-width: 1024px) {
@@ -86,15 +86,10 @@
     margin-left: 3%;
   }
   .whyChooseCard {
-    /* max-width: 550px; */
     width: 100%;
   }
-  /* 
-  .cardContainer {
-    /* justify-content: center; 
-  } */
 }
-@media (max-width: 400px) {
+@media (max-width: 430px) {
   .whyChooseUs > p {
     font-weight: 500;
     font-size: 12px;
@@ -105,17 +100,21 @@
   .whyChooseUs > h2,
   .whyChooseUs p {
     margin-left: 0px;
-    /* border: 2px solid green; */
   }
   .whyChooseUs > h2 {
     font-size: 20px;
   }
   .cardContent h3 {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 24px;
   }
 
   .whyChooseUs p {
-    font-size: 15px;
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .icon > svg {
+    width: 24px;
+    height: 24px;
   }
 }

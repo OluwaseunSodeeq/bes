@@ -5,6 +5,9 @@
   align-items: center;
   flex-direction: column;
   margin-top: 20px;
+  background-color: #f6f7f9;
+  border-radius: 40px;
+  margin-bottom: 32px;
 }
 
 .teamDiv h3 {
@@ -27,6 +30,10 @@
 }
 .btnDiv {
   margin-top: 30px;
+  padding: 0px;
+}
+.btnDiv span {
+  margin-top: 10px;
 }
 @media (max-width: 1024px) {
   .teamDiv h3 {
@@ -36,8 +43,10 @@
 /* @media (max-width: 768px) { */
 @media (max-width: 940px) {
   .teamDiv {
-    width: 70%;
-    margin: 0 auto;
+    width: 100%;
+    margin: 0 auto 32px;
+    padding-left: 24px;
+    padding-right: 24px;
   }
   .teamDiv h3 {
     font-size: 26px;
@@ -49,16 +58,22 @@
 }
 @media (max-width: 430px) {
   .teamDiv {
-    width: 80%;
+    width: 100%;
+    padding: 32px 24px;
   }
   .teamDiv h3 {
-    font-size: 22px;
+    font-size: 18px;
   }
   .teamDiv p {
-    font-size: 16px;
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: -10px;
   }
 }
 @media (max-width: 360px) {
+  .teamDiv {
+    padding: 24px;
+  }
   .teamDiv h3 {
     font-size: 18px;
   }

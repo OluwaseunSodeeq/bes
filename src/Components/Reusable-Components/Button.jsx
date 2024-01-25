@@ -1,10 +1,11 @@
 import styles from "./Button.module.css";
 function Button({
-  background = "#005CB7",
-  color = "#FAFBFC",
+  background = "#FAFBFC",
+  color = "#333437",
   children,
   handler,
   eventType = "Click",
+  btnType = "btn",
 }) {
   // const event = {eventType ? onClick={handlerClick} :  onSubmit={handlerSubmit}}
 
@@ -18,7 +19,7 @@ function Button({
         fontStyle: "normal",
         fontWeight: "500",
       }}
-      className={styles.btn}
+      className={btnType === "header" ? styles.headerBtn : styles.btn}
       onClick={eventType === "Click" ? handler : undefined}
       onSubmit={eventType === "Submit" ? handler : undefined}
     >

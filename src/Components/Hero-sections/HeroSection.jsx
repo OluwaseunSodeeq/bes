@@ -12,7 +12,7 @@ import Team from "./Team";
 function HeroSection() {
   return (
     <div>
-      <Container>
+      <Container background="#fff">
         <div className={styles.heroSection}>
           <div className={styles.heroSectionLeft}>
             <div className={styles.headingDiv}>
@@ -40,11 +40,13 @@ function HeroSection() {
 
             <p>
               <span>&quot;</span>Empowering Your Vision with Comprehensive
-              Engineering Excellence <br /> — From Piling works to Project
-              Management, We Deliver Solutions That <br /> Build Success.
+              Engineering Excellence — From Piling works to Project Management,
+              We Deliver Solutions That Build Success.
               <span>&quot;</span>
             </p>
-            <Button background="#00703C">Get A Free Quote</Button>
+            <Button background="#00703C" color="#FAFBFC" btnType="header">
+              Get A Free Quote
+            </Button>
           </div>
           <div className={styles.heroSectionRight}>
             <div className={styles.heroSectionRightImage}>

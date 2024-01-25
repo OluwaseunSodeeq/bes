@@ -1,10 +1,18 @@
-import Button from "../Reusable-Components/Button";
+// import Button from "../Reusable-Components/Button";
+import { useState } from "react";
 import Container from "../Reusable-Components/Container";
 import styles from "./ProjectHeroSection.module.css";
 
 const btnArray = ["Mission", "Vision", "Our Value"];
+const btnMsg = [
+  "At Bortarr Engineering Service our mission is to lead the construction industry with eco-friendly practices, unwavering commitment to quality, and the creation of enduring, sustainable structures that enrich our world while earning the trust of our clients, partners, and communities.",
+  "Vision",
+  "Our Value",
+];
 
 function ProjectHeroSection() {
+  const [index, setIndex] = useState(0);
+
   return (
     <Container background="#FAFBFC">
       <Container>
@@ -65,19 +73,20 @@ function ProjectHeroSection() {
           </div>
         </div>
         <div className={styles.bottomDown}>
-          <hr />
           <div className={styles.btns}>
-            {btnArray.map((each) => (
-              <Button key={each}>{each}</Button>
+            {btnArray.map((each, i) => (
+              <button
+                key={i}
+                className={`${styles.projBtn} ${
+                  index !== i ? "" : styles["projBtn--active"]
+                }`}
+                onClick={() => setIndex(i)}
+              >
+                {each}
+              </button>
             ))}
           </div>
-          <p>
-            At [Your Company Name], our mission is to lead the construction
-            industry with eco-friendly practices, unwavering commitment to
-            quality, and the creation of enduring, sustainable structures that
-            enrich our world while earning the trust of our clients, partners,
-            and communities.&quot;
-          </p>
+          <p>{btnMsg[index]}</p>
         </div>
       </div>
     </Container>

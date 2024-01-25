@@ -1,28 +1,33 @@
+// import Slider from "react-slick";
+// import "slick-carousel/slick/slick.css";
+// import "slick-carousel/slick/slick-theme.css";
+// import Carousel from "react-multi-carousel";
+
 import Carousel from "react-multi-carousel";
-import "react-multi-carousel/lib/styles.css";
 
 import Container from "../Reusable-Components/Container";
-import styles from "./OurTeam.module.css";
 import OurTeamCard from "./OurTeamCard";
+
+//css
+import "react-multi-carousel/lib/styles.css";
+import styles from "./OurTeam.module.css";
 
 function OurTeam() {
   const responsive = {
-    superLargeDesktop: {
-      // the naming can be any, depends on you.
-      breakpoint: { max: 4000, min: 3000 },
-      items: 5,
-    },
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
       items: 3,
+      partialVisibilityGutter: 0,
     },
     tablet: {
       breakpoint: { max: 1024, min: 464 },
       items: 2,
+      partialVisibilityGutter: 30,
     },
     mobile: {
       breakpoint: { max: 464, min: 0 },
       items: 1,
+      partialVisibilityGutter: 50,
     },
   };
   return (
@@ -58,8 +63,22 @@ function OurTeam() {
             ))}
           </div>
           <div className={styles.cards}>
-            <Carousel responsive={responsive}>
-              {Array.from({ length: 5 }, (_, i) => (
+            <Carousel
+              additionalTransfrom={0}
+              arrows={false}
+              autoPlaySpeed={3000}
+              focusOnSelect={true}
+              containerClass="container"
+              draggable={true}
+              itemClass={styles.itemClass}
+              keyBoardControl
+              minimumTouchDrag={80}
+              partialVisible={true}
+              responsive={responsive}
+              slidesToSlide={1}
+              swipeable={true}
+            >
+              {Array.from({ length: 3 }, (_, i) => (
                 <OurTeamCard key={i} />
               ))}
             </Carousel>

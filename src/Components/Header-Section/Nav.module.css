@@ -16,11 +16,12 @@ nav li {
 }
 nav li a {
   text-decoration: none;
+  color: #333437;
 }
 
 nav :global(.active) {
   color: #00703c;
-  border-bottom: 1px solid #00703c;
+  border-bottom: 1px solid #00603d;
   padding-bottom: 5px;
 }
 
@@ -40,7 +41,7 @@ nav :global(.active) {
   }
   nav > ul {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     flex-direction: column;
     padding: 400px 20px 0px 20px;
     border-radius: 10px;

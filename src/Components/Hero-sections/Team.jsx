@@ -4,7 +4,7 @@ import styles from "./Team.module.css";
 
 function Team() {
   return (
-    <Container background="#FAFBFC">
+    <Container>
       <div className={styles.teamDiv}>
         <h3>Become A Part Of Our Team</h3>
         <p>
@@ -12,7 +12,7 @@ function Team() {
           incredible, life changing mission
         </p>
         <div className={styles.btnDiv}>
-          <Button>
+          <Button background="#005CB7" color="#fff">
             Visit Us
             <span>
               <svg

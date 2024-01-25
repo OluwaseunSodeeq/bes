@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 
-function Logo() {
+function Logo({ setOpen }) {
   return (
-    <div>
+    <div onClick={() => setOpen(false)}>
       <Link to="/">
         <svg
           xmlns="http://www.w3.org/2000/svg"

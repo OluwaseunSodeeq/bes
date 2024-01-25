@@ -5,7 +5,7 @@ import "leaflet/dist/leaflet.css";
 
 const officeLat = 6.486539;
 const officeLng = 3.3742237;
-const zoom = 13;
+const zoom = 15;
 const officePosition = [officeLat, officeLng];
 
 function Map() {

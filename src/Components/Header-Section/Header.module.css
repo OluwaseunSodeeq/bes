@@ -17,7 +17,7 @@
   .header {
     position: relative;
     z-index: 99;
-    background-color: #fff;
+    /* background-color: #fff; */
     /* justify-content: flex-start; */
   }
   .btnContainer {
@@ -26,5 +26,6 @@
   .hamburger {
     /* border: 2px solid red; */
     display: block;
+    height: 40px;
   }
 }

@@ -1,6 +1,6 @@
 import styles from "./Testimonial.module.css";
 
-function TestimonialCard({ client }) {
+function TestimonialCard({ client, i }) {
   // const maxrating = client.rating
   const maxRating = 5;
   console.log(client);
@@ -33,7 +33,7 @@ function TestimonialCard({ client }) {
         </svg>
       </span>
 
-      <div className={styles.imageDiv}></div>
+      <div className={styles.imageDiv}>{i + 1}</div>
       <div className={styles.rating}>
         {Array.from({ length: maxRating }, (_, i) => (
           <span key={i}>

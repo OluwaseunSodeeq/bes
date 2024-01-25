@@ -1,10 +1,9 @@
 .ourTeam {
+  width: 100%;
   position: relative;
-  /* border: 2px solid green; */
   text-align: center;
   margin-top: 24px;
   padding-bottom: 30px;
-  /* background-color: #005cb7; */
 }
 .ourTeam > div:first-child {
   width: 40px;
@@ -38,19 +37,16 @@
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
-  line-height: 27px; /* 27px */
+  line-height: 27px;
 }
 
 /* ==============Cards styles ============= */
 .content > .cards {
   margin-top: 24px;
-  
-  /* display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: auto; */
+  padding: 0px 20px;
 }
 .ourTeam > .content {
+  width: 100%;
   position: relative;
   padding: 32px 0px;
 }
@@ -71,13 +67,11 @@
 .content > div:last-child {
   background-color: #94d5f7;
   right: -50px;
-
   bottom: -15px;
 }
 
 .content > .svggs {
   position: absolute;
-
   width: 32px;
   height: 40px;
   right: -50px;
@@ -88,6 +82,9 @@
   flex-wrap: wrap;
   row-gap: 5px;
   transform: rotate(-45deg);
+}
+.itemClass {
+  margin-right: 10px;
 }
 
 @media (max-width: 940px) {
@@ -103,6 +100,9 @@
   }
 }
 @media (max-width: 600px) {
+  .ourTeam {
+    padding: 0px;
+  }
   .ourTeam > h3 {
     font-size: 24px;
   }

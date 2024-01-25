@@ -1,10 +1,10 @@
 import Header from "../Components/Header-Section/Header";
 import WhatHeroSection from "../Components/WHatWeDoContent/WhatHeroSection";
-function WhatWedo() {
+function WhatWedo({ setOpen, open }) {
   return (
     <div>
-      <Header />
-      <WhatHeroSection />
+      <Header setOpen={setOpen} open={open} />
+      <WhatHeroSection onClick={() => setOpen(false)} />
     </div>
   );
 }
