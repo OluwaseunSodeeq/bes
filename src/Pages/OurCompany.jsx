@@ -1,6 +1,6 @@
 import Header from "../Components/Reusable-Components/Header-Section/Header";
 import OurTeam from "../Components/OurCompanyContent/OurTeam";
-import ProjectHeroSection from "../Components/OurCompanyContent/ProjectHeroSection";
+import ProjectHeroSection from "../Components/OurCompanyContent/CompanyHeroSection";
 import RecentProject from "../Components/OurCompanyContent/RecentProject";
 
 function OurCompany({ setOpen, open }) {

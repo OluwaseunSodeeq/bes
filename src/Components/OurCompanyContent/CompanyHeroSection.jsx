@@ -1,7 +1,8 @@
 // import Button from "../Reusable-Components/Button";
 import { useState } from "react";
 import Container from "../Reusable-Components/Container";
-import styles from "./ProjectHeroSection.module.css";
+import RenderBtn from "../Reusable-Components/RenderBtn";
+import styles from "./CompanyHeroSection.module.css";
 
 const btnArray = ["Mission", "Vision", "Our Value"];
 const btnMsg = [
@@ -10,7 +11,7 @@ const btnMsg = [
   "Our Value At Bortarr Engineering Service our mission is to lead the construction industry with eco-friendly practices, unwavering commitment to quality, and the creation of enduring, sustainable structures that enrich our world while earning the trust of our clients, partners, and communities.",
 ];
 
-function ProjectHeroSection() {
+function CompanyHeroSection() {
   const [index, setIndex] = useState(0);
 
   return (
@@ -75,15 +76,14 @@ function ProjectHeroSection() {
         <div className={styles.bottomDown}>
           <div className={styles.btns}>
             {btnArray.map((each, i) => (
-              <button
+              <RenderBtn
                 key={i}
-                className={`${styles.projBtn} ${
-                  index !== i ? "" : styles["projBtn--active"]
-                }`}
-                onClick={() => setIndex(i)}
-              >
-                {each}
-              </button>
+                each={each}
+                i={i}
+                index={index}
+                setIndex={setIndex}
+                type="companyBtns"
+              />
             ))}
           </div>
           <p>{btnMsg[index]}</p>
@@ -93,7 +93,7 @@ function ProjectHeroSection() {
   );
 }
 
-export default ProjectHeroSection;
+export default CompanyHeroSection;
 
 {
   /* <div>

@@ -1,0 +1,41 @@
+.projBtn,
+.companyBtns {
+  font-family: "Quicksand", sans-serif;
+  display: flex;
+  padding: 12px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border: none;
+  border-radius: 8px;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 24px;
+  cursor: pointer;
+  background-color: #fafbfc;
+  color: #333437;
+  white-space: nowrap;
+}
+
+.companyBtns--active {
+  background-color: #005cb7;
+  color: #fafbfc;
+}
+.projBtn--active {
+  background-color: #00703c;
+  color: #fafbfc;
+}
+
+@media (max-width: 600px) {
+  .projBtn,
+  .companyBtns {
+    padding: 10px;
+  }
+}
+@media (max-width: 430px) {
+  .projBtn,
+  .companyBtns {
+    padding: 8px;
+    font-size: 14px;
+  }
+}

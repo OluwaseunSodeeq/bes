@@ -133,28 +133,7 @@
   margin-top: 24px;
   /* border: 2px solid red; */
 }
-.projBtn {
-  font-family: "Quicksand", sans-serif;
-  display: flex;
-  padding: 12px 24px;
-  justify-content: center;
-  align-items: center;
-  gap: 8px;
-  border: none;
-  border-radius: 8px;
-  font-size: 17px;
-  font-weight: 500;
-  line-height: 24px;
-  cursor: pointer;
-  background-color: #fafbfc;
-  color: #333437;
-  white-space: nowrap;
-}
 
-.projBtn--active {
-  background-color: #005cb7;
-  color: #fafbfc;
-}
 @keyframes moving {
   from {
     transform: translateX(100px);
@@ -213,18 +192,12 @@
     justify-content: left;
     /* padding-left: 0px; */
   }
-  .projBtn {
-    padding: 10px;
-  }
 }
 @media (max-width: 430px) {
   .leftUp > h3 {
     font-size: 18px;
   }
-  .projBtn {
-    padding: 8px;
-    font-size: 14px;
-  }
+
   .bottom {
     background-color: #fafbfc;
   }
