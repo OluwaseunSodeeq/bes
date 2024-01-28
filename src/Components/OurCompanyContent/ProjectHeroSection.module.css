@@ -26,7 +26,6 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  /* border: solid red; */
 }
 .headingContent h3 {
   color: #fafbfc;
@@ -35,7 +34,6 @@
   font-style: normal;
   font-weight: 400;
   line-height: 44px;
-  /* letter-spacing: -0.72px; */
 }
 .headingContent p {
   color: #f2f4f6;
@@ -64,9 +62,9 @@
   justify-content: space-between;
   align-items: center;
   gap: 10px;
+  background-color: #fafbfc;
 }
 .leftUp {
-  /* max-width: 700px; */
   width: 700px;
   height: 230px;
   color: #67696e;
@@ -125,6 +123,8 @@
   font-weight: 500;
   line-height: 24px;
   margin-top: 16px;
+  /* transition: all 0.3s ease-in-out; */
+  animation: moving 0.5s ease-in;
 }
 .btns {
   display: flex;
@@ -155,7 +155,18 @@
   background-color: #005cb7;
   color: #fafbfc;
 }
-
+@keyframes moving {
+  from {
+    transform: translateX(100px);
+    opacity: 0;
+    /* margin-left: 120%; */
+  }
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+    /* margin-left: 0%; */
+  }
+}
 @media (max-width: 940px) {
   .top {
     display: none;
@@ -213,6 +224,13 @@
   .projBtn {
     padding: 8px;
     font-size: 14px;
+  }
+  .bottom {
+    background-color: #fafbfc;
+  }
+  .bottomDown {
+    background: none;
+    box-shadow: none;
   }
 }
 @media (max-width: 320px) {

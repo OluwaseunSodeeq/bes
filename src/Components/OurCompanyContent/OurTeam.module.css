@@ -43,7 +43,8 @@
 /* ==============Cards styles ============= */
 .content > .cards {
   margin-top: 24px;
-  padding: 0px 20px;
+  padding: 10px 0px;
+  background: #fafbfc;
 }
 .ourTeam > .content {
   width: 100%;
@@ -84,7 +85,10 @@
   transform: rotate(-45deg);
 }
 .itemClass {
-  margin-right: 10px;
+  margin-left: 10px;
+}
+.itemClass:first-child {
+  margin-left: 0px;
 }
 
 @media (max-width: 940px) {
@@ -123,11 +127,17 @@
 }
 @media (max-width: 450px) {
   .ourTeam > div:first-child {
-    left: 260px;
+    left: 280px;
     top: 10px;
   }
   .ourTeam > p {
     font-size: 15px;
+  }
+  .itemClass {
+    margin-left: 0px;
+  }
+  .itemClass:first-child {
+    margin-left: 0px;
   }
 }
 @media (max-width: 320px) {

@@ -1,8 +1,10 @@
 import { Link } from "react-router-dom";
+import Header from "../Components/Reusable-Components/Header-Section/Header";
 
-function OurProjects() {
+function OurProjects({ open, setOpen }) {
   return (
     <div>
+      <Header setOpen={setOpen} open={open} />
       <h1 style={{ fontSize: "50px", textAlign: "center" }}>
         Page in Progress
       </h1>

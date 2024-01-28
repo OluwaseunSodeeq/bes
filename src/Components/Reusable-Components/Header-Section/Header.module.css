@@ -28,4 +28,8 @@
     display: block;
     height: 40px;
   }
+  .hamburger svg {
+    width: 25px;
+    height: 25px;
+  }
 }

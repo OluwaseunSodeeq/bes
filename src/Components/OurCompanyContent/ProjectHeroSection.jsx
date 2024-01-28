@@ -6,8 +6,8 @@ import styles from "./ProjectHeroSection.module.css";
 const btnArray = ["Mission", "Vision", "Our Value"];
 const btnMsg = [
   "At Bortarr Engineering Service our mission is to lead the construction industry with eco-friendly practices, unwavering commitment to quality, and the creation of enduring, sustainable structures that enrich our world while earning the trust of our clients, partners, and communities.",
-  "Vision",
-  "Our Value",
+  "Vision At Bortarr Engineering Service our mission is to lead the construction industry with eco-friendly practices, unwavering commitment to quality, and the creation of enduring, sustainable structures that enrich our world while earning the trust of our clients, partners, and communities.",
+  "Our Value At Bortarr Engineering Service our mission is to lead the construction industry with eco-friendly practices, unwavering commitment to quality, and the creation of enduring, sustainable structures that enrich our world while earning the trust of our clients, partners, and communities.",
 ];
 
 function ProjectHeroSection() {

@@ -2,8 +2,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* background: #fff; */
-  /* border: 2px solid red; */
 }
 
 /* ===========LEFT STYLES ====== */
@@ -21,9 +19,7 @@
   font-size: 42px;
   font-style: normal;
   font-weight: 600;
-  line-height: 52px; /* 72px */
-  /* line-height: 72px;  */
-  /* letter-spacing: -0.96px; */
+  line-height: 52px;
 }
 .headingSvg {
   position: absolute;
@@ -37,7 +33,6 @@
   width: 90%;
   color: #67696e;
   font-family: "Roboto", serif;
-  /* font-size: 16px; */
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -48,9 +43,6 @@
 
 /* ===========RIGHT STYLES ====== */
 .heroSectionRight {
-  /* max-width: 600px; */
-  /* max-width: 570px; */
-
   width: 570px;
   background-image: url("../BG-image.png");
   background-position: center;
@@ -58,14 +50,12 @@
   height: auto;
   padding: 0px;
   margin-top: 50px;
-  /* border: 2px solid red; */
 }
 .heroSectionRight > .heroSectionRightImage {
   width: 100%;
   margin-left: -8px;
   transform: rotate(-5deg);
   margin-bottom: -40px;
-  /* border: 2px solid blue; */
 }
 
 /* ===========SINCE STYLES ====== */
@@ -95,22 +85,18 @@
 @media (max-width: 1024px) {
   .heroSectionLeft {
     width: 400px;
-    /* border: 2px solid green; */
   }
   .heroSectionRight {
     width: 480px;
   }
   .heroSectionRight > .heroSectionRightImage {
-    width: 110%;
+    width: 105%;
     padding: 0px;
     margin-top: 65px;
     margin-left: -13px;
-    /* padding-right: 20px; */
-    /* border: 2px solid blue; */
   }
   .heroSectionRightImage img {
     width: 100%;
-    /* object-fit: cover; */
   }
 
   .headingDiv h1 {
@@ -131,7 +117,6 @@
   .heroSectionRight,
   .headingDiv {
     width: 92%;
-    /* border: 2px solid red; */
   }
 
   .headingSvg > svg {
@@ -139,13 +124,10 @@
   }
 
   .heroSectionRight > .heroSectionRightImage {
-    width: 105%;
+    width: 110%;
     margin-left: -10px;
     margin-top: 0px;
-    /* margin-right: 20px; */
-    /* margin-right: 20px; */
-    /* padding-left: 0px; */
-    /* border: 2px solid red; */
+    padding: 0px;
   }
   .sinceDiv {
     margin-left: 3%;
@@ -170,7 +152,6 @@
 @media (max-width: 430px) {
   .heroSection {
     justify-content: flex-start;
-    /* margin-top: 20px; */
     padding-top: 10px;
   }
   .heroSectionLeft,
@@ -180,7 +161,7 @@
   }
 
   .headingSvg > svg {
-    width: 65%;
+    width: 58%;
   }
   .headingDiv h1 {
     font-size: 24px;
@@ -201,7 +182,7 @@
     margin-top: 0px;
   }
   .heroSectionRight > .heroSectionRightImage {
-    /* width: 109%; */
+    width: 110%;
     padding-top: 0px;
     margin-top: 10px;
   }

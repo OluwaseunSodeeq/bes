@@ -1,13 +1,13 @@
 import Expertise from "./Expertise";
-import Button from "../Reusable-Components/Button";
-import Container from "../Reusable-Components/Container";
+import Button from "../../Reusable-Components/Button";
+import Container from "../../Reusable-Components/Container";
 
 import styles from "./HeroSection.module.css";
 import SummaryOfJobs from "./SummaryOfJobs";
 import WhyChooseUs from "./WhyChooseUs";
 import ExperienceInAction from "./ExperienceInAction";
-import Testimonial from "./Testimonial";
 import Team from "./Team";
+import Testimonial from "./Testimonial";
 
 function HeroSection() {
   return (

@@ -14,7 +14,6 @@ function CompanyContentDiv() {
 
   function handler(e) {
     e.preventDefault();
-    console.log("Hey!");
     setOpenForm((open) => !open);
   }
   console.log(openForm);

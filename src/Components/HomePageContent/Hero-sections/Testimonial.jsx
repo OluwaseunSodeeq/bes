@@ -5,7 +5,7 @@ import Carousel from "react-multi-carousel";
 // import "slick-carousel/slick/slick.css";
 // import "slick-carousel/slick/slick-theme.css";
 
-import Container from "../Reusable-Components/Container";
+import Container from "../../Reusable-Components/Container";
 import styles from "./Testimonial.module.css";
 import TestimonialCard from "./TestimonialCard";
 
@@ -30,23 +30,23 @@ function Testimonial() {
   };
 
   return (
-    <Container>
+    <Container background="#fff">
       <div className={styles.testimonial}>
         <h3>Testimonials</h3>
         <div className={styles.testimonailContent}>
           <Carousel
             additionalTransfrom={0}
-            arrows={false}
+            arrows={true}
             autoPlaySpeed={3000}
             focusOnSelect={true}
             containerClass="container"
             draggable={true}
             itemClass={styles.itemClass}
-            keyBoardControl
             minimumTouchDrag={80}
             responsive={responsive}
             slidesToSlide={1}
             swipeable={true}
+            // showDots={true}
             // centerMode={true}
           >
             {Array.from({ length: testimonialArrayLength }, (_, i) => (

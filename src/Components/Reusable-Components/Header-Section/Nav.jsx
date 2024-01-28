@@ -5,7 +5,6 @@ import { NavLink } from "react-router-dom";
 
 function Nav({ open, setOpen }) {
   // const navItems = ["What We Do", "Our Projects", "Our Company"];
-  console.log(open);
   return (
     <nav>
       {/* <Logo /> */}

@@ -1,7 +1,7 @@
-import Header from "../Components/Header-Section/Header";
-import OurTeam from "../Components/ProjectContent/OurTeam";
-import ProjectHeroSection from "../Components/ProjectContent/ProjectHeroSection";
-import RecentProject from "../Components/ProjectContent/RecentProject";
+import Header from "../Components/Reusable-Components/Header-Section/Header";
+import OurTeam from "../Components/OurCompanyContent/OurTeam";
+import ProjectHeroSection from "../Components/OurCompanyContent/ProjectHeroSection";
+import RecentProject from "../Components/OurCompanyContent/RecentProject";
 
 function OurCompany({ setOpen, open }) {
   return (

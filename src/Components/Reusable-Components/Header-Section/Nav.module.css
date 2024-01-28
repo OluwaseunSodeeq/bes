@@ -25,6 +25,18 @@ nav :global(.active) {
   padding-bottom: 5px;
 }
 
+@keyframes moving {
+  from {
+    transform: translateX(100px);
+    opacity: 0;
+    /* margin-left: 120%; */
+  }
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+    /* margin-left: 0%; */
+  }
+}
 @media (max-width: 940px) {
   nav {
     width: 100%;
@@ -37,21 +49,20 @@ nav :global(.active) {
   }
   nav > ul.open {
     margin-left: 0%;
+    animation: moving 0.3s ease-in;
+
     /* transform: translateX(0%); */
   }
   nav > ul {
     width: 100%;
     min-height: 100vh;
     flex-direction: column;
-    padding: 400px 20px 0px 20px;
+    padding: 400px 20px 30px 20px;
     border-radius: 10px;
     justify-content: center;
     align-items: center;
-    padding-bottom: 30px;
-    /* background-color: #f2f2ed; */
     background-color: #eef8fc;
     margin-left: 120%;
-    /* transform: translateX(100%); */
   }
   nav > ul li {
     padding: 5px;

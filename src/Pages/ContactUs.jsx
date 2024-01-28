@@ -1,6 +1,6 @@
-import Header from "../Components/Header-Section/Header";
-import CompanyContentDiv from "../Components/OurCompanyContent/CompanyContentDiv";
-import Map from "../Components/OurCompanyContent/Map";
+import Header from "../Components/Reusable-Components/Header-Section/Header";
+import CompanyContentDiv from "../Components/ContactUs/CompanyContentDiv";
+import Map from "../Components/ContactUs/Map";
 // import CompanyContent from "../Components/OurCompanyContent/CompanyContent";
 // import Map from "../Components/OurCompanyContent/Map";
 

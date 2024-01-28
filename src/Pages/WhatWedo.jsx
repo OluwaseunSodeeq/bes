@@ -1,4 +1,4 @@
-import Header from "../Components/Header-Section/Header";
+import Header from "../Components/Reusable-Components/Header-Section/Header";
 import WhatHeroSection from "../Components/WHatWeDoContent/WhatHeroSection";
 function WhatWedo({ setOpen, open }) {
   return (

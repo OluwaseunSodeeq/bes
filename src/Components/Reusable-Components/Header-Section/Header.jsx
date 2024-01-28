@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import Button from "../Reusable-Components/Button";
-import Container from "../Reusable-Components/Container";
+import Button from "../Button";
+import Container from "../Container";
 import styles from "./Header.module.css";
 // import { useState } from "react";
 

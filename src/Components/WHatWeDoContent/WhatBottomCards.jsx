@@ -7,7 +7,11 @@ function WhatBottomCards({ bottomArray }) {
     <Container>
       <div className={styles.bottonContainer}>
         <div className={styles.left}>
-          <CardImage image={bottomArray[0]} key={bottomArray[0]} />
+          <CardImage
+            image={bottomArray[0]}
+            key={bottomArray[0]}
+            currentImg="0"
+          />
         </div>
 
         <div className={styles.right}>

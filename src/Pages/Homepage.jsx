@@ -1,5 +1,5 @@
-import Header from "../Components/Header-Section/Header";
-import HeroSection from "../Components/Hero-sections/HeroSection";
+import Header from "../Components/Reusable-Components/Header-Section/Header";
+import HeroSection from "../Components/HomePageContent/Hero-sections/HeroSection";
 
 function Homepage({ setOpen, open }) {
   return (

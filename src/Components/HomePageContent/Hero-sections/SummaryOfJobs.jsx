@@ -1,5 +1,5 @@
 // import Container from "../Reusable-Components/Container";
-import Container from "../Reusable-Components/Container";
+import Container from "../../Reusable-Components/Container";
 import Card from "./Card";
 import styles from "./SummaryOfJobs.module.css";
 // import Container from "../Reusable-Components/Container";

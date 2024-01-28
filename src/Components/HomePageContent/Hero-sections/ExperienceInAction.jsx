@@ -1,4 +1,4 @@
-import Container from "../Reusable-Components/Container";
+import Container from "../../Reusable-Components/Container";
 import styles from "./Expertise.module.css";
 import SuccessfulProject from "./SuccessfulProject";
 

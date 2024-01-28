@@ -38,9 +38,13 @@
   }
   .btn > span > svg,
   .headerBtn > span > svg {
-    width: 16px;
-    height: 16px;
+    width: 15px;
+    height: 15px;
   }
+  .btn > span > svg {
+    margin-bottom: 4px;
+  }
+
   .headerBtn {
     padding: 10px;
   }

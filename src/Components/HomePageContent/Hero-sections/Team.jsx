@@ -1,5 +1,5 @@
-import Button from "../Reusable-Components/Button";
-import Container from "../Reusable-Components/Container";
+import Button from "../../Reusable-Components/Button";
+import Container from "../../Reusable-Components/Container";
 import styles from "./Team.module.css";
 
 function Team() {
