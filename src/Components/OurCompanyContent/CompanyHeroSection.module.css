@@ -154,8 +154,7 @@
     width: 100%;
     padding: 0px;
     flex-direction: column;
-    /* border: 2px solid green; */
-    margin: -50px 0px auto;
+    margin: -10px 0px auto;
   }
 
   .leftUp,

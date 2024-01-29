@@ -38,10 +38,16 @@
   padding: 24px;
   background-color: #fafbfc;
   box-shadow: 0px 4px 40px 0px rgba(127, 181, 230, 0.12);
-
+  cursor: pointer;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+}
+
+.whyChooseCard:hover {
+  border-radius: 8px;
+  background: #f2f4f6;
+  box-shadow: 0px 4px 40px 0px rgba(127, 181, 230, 0.12);
 }
 .cardContent {
   margin-left: 16px;
