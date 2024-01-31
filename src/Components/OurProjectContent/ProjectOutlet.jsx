@@ -16,14 +16,14 @@ const siteData = [
         <g clipPath="url(#clip0_845_1505)">
           <path
             d="M12 12.9805C13.6569 12.9805 15 11.6373 15 9.98047C15 8.32361 13.6569 6.98047 12 6.98047C10.3431 6.98047 9 8.32361 9 9.98047C9 11.6373 10.3431 12.9805 12 12.9805Z"
-            stroke="#005CB7"
+            stroke="#333437"
             strokeWidth="2"
             strokeLinecap="round"
             strokeLinejoin="round"
           />
           <path
             d="M19.5 9.98047C19.5 16.7305 12 21.9805 12 21.9805C12 21.9805 4.5 16.7305 4.5 9.98047C4.5 7.99135 5.29018 6.08369 6.6967 4.67717C8.10322 3.27065 10.0109 2.48047 12 2.48047C13.9891 2.48047 15.8968 3.27065 17.3033 4.67717C18.7098 6.08369 19.5 7.99135 19.5 9.98047Z"
-            stroke="#005CB7"
+            stroke="#333437"
             strokeWidth="2"
             strokeLinecap="round"
             strokeLinejoin="round"
@@ -56,42 +56,42 @@ const siteData = [
         <g clipPath="url(#clip0_845_1514)">
           <path
             d="M19.5 3.98047H4.5C4.08579 3.98047 3.75 4.31626 3.75 4.73047V19.7305C3.75 20.1447 4.08579 20.4805 4.5 20.4805H19.5C19.9142 20.4805 20.25 20.1447 20.25 19.7305V4.73047C20.25 4.31626 19.9142 3.98047 19.5 3.98047Z"
-            stroke="#005CB7"
+            stroke="#333437"
             strokeWidth="2"
             strokeLinecap="round"
             strokeLinejoin="round"
           />
           <path
             d="M16.5 2.48047V5.48047"
-            stroke="#005CB7"
+            stroke="#333437"
             strokeWidth="2"
             strokeLinecap="round"
             strokeLinejoin="round"
           />
           <path
             d="M7.5 2.48047V5.48047"
-            stroke="#005CB7"
+            stroke="#333437"
             strokeWidth="2"
             strokeLinecap="round"
             strokeLinejoin="round"
           />
           <path
             d="M3.75 8.48047H20.25"
-            stroke="#005CB7"
+            stroke="#333437"
             strokeWidth="2"
             strokeLinecap="round"
             strokeLinejoin="round"
           />
           <path
             d="M8.25 12.2305L9.75 11.4805V17.4805"
-            stroke="#005CB7"
+            stroke="#333437"
             strokeWidth="2"
             strokeLinecap="round"
             strokeLinejoin="round"
           />
           <path
             d="M12.9506 12.2305C13.0533 12.0538 13.1909 11.8999 13.3552 11.7783C13.5194 11.6567 13.7068 11.57 13.9058 11.5234C14.1047 11.4768 14.3111 11.4714 14.5123 11.5074C14.7135 11.5434 14.9051 11.6202 15.0755 11.733C15.246 11.8458 15.3915 11.9922 15.5033 12.1633C15.6152 12.3343 15.6908 12.5264 15.7257 12.7278C15.7606 12.9292 15.754 13.1355 15.7062 13.3342C15.6585 13.533 15.5707 13.7198 15.4481 13.8834L12.75 17.4805H15.75"
-            stroke="#005CB7"
+            stroke="#333437"
             strokeWidth="2"
             strokeLinecap="round"
             strokeLinejoin="round"
@@ -124,42 +124,42 @@ const siteData = [
         <g clipPath="url(#clip0_845_1514)">
           <path
             d="M19.5 3.98047H4.5C4.08579 3.98047 3.75 4.31626 3.75 4.73047V19.7305C3.75 20.1447 4.08579 20.4805 4.5 20.4805H19.5C19.9142 20.4805 20.25 20.1447 20.25 19.7305V4.73047C20.25 4.31626 19.9142 3.98047 19.5 3.98047Z"
-            stroke="#005CB7"
+            stroke="#333437"
             strokeWidth="2"
             strokeLinecap="round"
             strokeLinejoin="round"
           />
           <path
             d="M16.5 2.48047V5.48047"
-            stroke="#005CB7"
+            stroke="#333437"
             strokeWidth="2"
             strokeLinecap="round"
             strokeLinejoin="round"
           />
           <path
             d="M7.5 2.48047V5.48047"
-            stroke="#005CB7"
+            stroke="#333437"
             strokeWidth="2"
             strokeLinecap="round"
             strokeLinejoin="round"
           />
           <path
             d="M3.75 8.48047H20.25"
-            stroke="#005CB7"
+            stroke="#333437"
             strokeWidth="2"
             strokeLinecap="round"
             strokeLinejoin="round"
           />
           <path
             d="M8.25 12.2305L9.75 11.4805V17.4805"
-            stroke="#005CB7"
+            stroke="#333437"
             strokeWidth="2"
             strokeLinecap="round"
             strokeLinejoin="round"
           />
           <path
             d="M12.9506 12.2305C13.0533 12.0538 13.1909 11.8999 13.3552 11.7783C13.5194 11.6567 13.7068 11.57 13.9058 11.5234C14.1047 11.4768 14.3111 11.4714 14.5123 11.5074C14.7135 11.5434 14.9051 11.6202 15.0755 11.733C15.246 11.8458 15.3915 11.9922 15.5033 12.1633C15.6152 12.3343 15.6908 12.5264 15.7257 12.7278C15.7606 12.9292 15.754 13.1355 15.7062 13.3342C15.6585 13.533 15.5707 13.7198 15.4481 13.8834L12.75 17.4805H15.75"
-            stroke="#005CB7"
+            stroke="#333437"
             strokeWidth="2"
             strokeLinecap="round"
             strokeLinejoin="round"
@@ -192,42 +192,42 @@ const siteData = [
         <g clipPath="url(#clip0_845_1514)">
           <path
             d="M19.5 3.98047H4.5C4.08579 3.98047 3.75 4.31626 3.75 4.73047V19.7305C3.75 20.1447 4.08579 20.4805 4.5 20.4805H19.5C19.9142 20.4805 20.25 20.1447 20.25 19.7305V4.73047C20.25 4.31626 19.9142 3.98047 19.5 3.98047Z"
-            stroke="#005CB7"
+            stroke="#333437"
             strokeWidth="2"
             strokeLinecap="round"
             strokeLinejoin="round"
           />
           <path
             d="M16.5 2.48047V5.48047"
-            stroke="#005CB7"
+            stroke="#333437"
             strokeWidth="2"
             strokeLinecap="round"
             strokeLinejoin="round"
           />
           <path
             d="M7.5 2.48047V5.48047"
-            stroke="#005CB7"
+            stroke="#333437"
             strokeWidth="2"
             strokeLinecap="round"
             strokeLinejoin="round"
           />
           <path
             d="M3.75 8.48047H20.25"
-            stroke="#005CB7"
+            stroke="#333437"
             strokeWidth="2"
             strokeLinecap="round"
             strokeLinejoin="round"
           />
           <path
             d="M8.25 12.2305L9.75 11.4805V17.4805"
-            stroke="#005CB7"
+            stroke="#333437"
             strokeWidth="2"
             strokeLinecap="round"
             strokeLinejoin="round"
           />
           <path
             d="M12.9506 12.2305C13.0533 12.0538 13.1909 11.8999 13.3552 11.7783C13.5194 11.6567 13.7068 11.57 13.9058 11.5234C14.1047 11.4768 14.3111 11.4714 14.5123 11.5074C14.7135 11.5434 14.9051 11.6202 15.0755 11.733C15.246 11.8458 15.3915 11.9922 15.5033 12.1633C15.6152 12.3343 15.6908 12.5264 15.7257 12.7278C15.7606 12.9292 15.754 13.1355 15.7062 13.3342C15.6585 13.533 15.5707 13.7198 15.4481 13.8834L12.75 17.4805H15.75"
-            stroke="#005CB7"
+            stroke="#333437"
             strokeWidth="2"
             strokeLinecap="round"
             strokeLinejoin="round"
@@ -260,42 +260,42 @@ const siteData = [
         <g clipPath="url(#clip0_845_1514)">
           <path
             d="M19.5 3.98047H4.5C4.08579 3.98047 3.75 4.31626 3.75 4.73047V19.7305C3.75 20.1447 4.08579 20.4805 4.5 20.4805H19.5C19.9142 20.4805 20.25 20.1447 20.25 19.7305V4.73047C20.25 4.31626 19.9142 3.98047 19.5 3.98047Z"
-            stroke="#005CB7"
+            stroke="#333437"
             strokeWidth="2"
             strokeLinecap="round"
             strokeLinejoin="round"
           />
           <path
             d="M16.5 2.48047V5.48047"
-            stroke="#005CB7"
+            stroke="#333437"
             strokeWidth="2"
             strokeLinecap="round"
             strokeLinejoin="round"
           />
           <path
             d="M7.5 2.48047V5.48047"
-            stroke="#005CB7"
+            stroke="#333437"
             strokeWidth="2"
             strokeLinecap="round"
             strokeLinejoin="round"
           />
           <path
             d="M3.75 8.48047H20.25"
-            stroke="#005CB7"
+            stroke="#333437"
             strokeWidth="2"
             strokeLinecap="round"
             strokeLinejoin="round"
           />
           <path
             d="M8.25 12.2305L9.75 11.4805V17.4805"
-            stroke="#005CB7"
+            stroke="#333437"
             strokeWidth="2"
             strokeLinecap="round"
             strokeLinejoin="round"
           />
           <path
             d="M12.9506 12.2305C13.0533 12.0538 13.1909 11.8999 13.3552 11.7783C13.5194 11.6567 13.7068 11.57 13.9058 11.5234C14.1047 11.4768 14.3111 11.4714 14.5123 11.5074C14.7135 11.5434 14.9051 11.6202 15.0755 11.733C15.246 11.8458 15.3915 11.9922 15.5033 12.1633C15.6152 12.3343 15.6908 12.5264 15.7257 12.7278C15.7606 12.9292 15.754 13.1355 15.7062 13.3342C15.6585 13.533 15.5707 13.7198 15.4481 13.8834L12.75 17.4805H15.75"
-            stroke="#005CB7"
+            stroke="#333437"
             strokeWidth="2"
             strokeLinecap="round"
             strokeLinejoin="round"
@@ -328,42 +328,42 @@ const siteData = [
         <g clipPath="url(#clip0_845_1514)">
           <path
             d="M19.5 3.98047H4.5C4.08579 3.98047 3.75 4.31626 3.75 4.73047V19.7305C3.75 20.1447 4.08579 20.4805 4.5 20.4805H19.5C19.9142 20.4805 20.25 20.1447 20.25 19.7305V4.73047C20.25 4.31626 19.9142 3.98047 19.5 3.98047Z"
-            stroke="#005CB7"
+            stroke="#333437"
             strokeWidth="2"
             strokeLinecap="round"
             strokeLinejoin="round"
           />
           <path
             d="M16.5 2.48047V5.48047"
-            stroke="#005CB7"
+            stroke="#333437"
             strokeWidth="2"
             strokeLinecap="round"
             strokeLinejoin="round"
           />
           <path
             d="M7.5 2.48047V5.48047"
-            stroke="#005CB7"
+            stroke="#333437"
             strokeWidth="2"
             strokeLinecap="round"
             strokeLinejoin="round"
           />
           <path
             d="M3.75 8.48047H20.25"
-            stroke="#005CB7"
+            stroke="#333437"
             strokeWidth="2"
             strokeLinecap="round"
             strokeLinejoin="round"
           />
           <path
             d="M8.25 12.2305L9.75 11.4805V17.4805"
-            stroke="#005CB7"
+            stroke="#333437"
             strokeWidth="2"
             strokeLinecap="round"
             strokeLinejoin="round"
           />
           <path
             d="M12.9506 12.2305C13.0533 12.0538 13.1909 11.8999 13.3552 11.7783C13.5194 11.6567 13.7068 11.57 13.9058 11.5234C14.1047 11.4768 14.3111 11.4714 14.5123 11.5074C14.7135 11.5434 14.9051 11.6202 15.0755 11.733C15.246 11.8458 15.3915 11.9922 15.5033 12.1633C15.6152 12.3343 15.6908 12.5264 15.7257 12.7278C15.7606 12.9292 15.754 13.1355 15.7062 13.3342C15.6585 13.533 15.5707 13.7198 15.4481 13.8834L12.75 17.4805H15.75"
-            stroke="#005CB7"
+            stroke="#333437"
             strokeWidth="2"
             strokeLinecap="round"
             strokeLinejoin="round"
@@ -465,7 +465,25 @@ function ProjectOutlet({ data }) {
                   <div className={styles.container} key={i}>
                     <div className={styles.week}>
                       <div className={styles.weekTag}>
-                        <div className={styles.arrow}></div>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="75"
+                          height="33"
+                          viewBox="0 0 75 33"
+                          fill="none"
+                        >
+                          <path
+                            d="M75 15.6151L60.5 0.230469H0V32.2305H60.5L75 15.6151Z"
+                            fill="rgba(201, 236, 251, 0.5)"
+                            // fill="#C9ECFB"
+                            fillOpacity="0.5"
+                          />
+                          <text x="10" y="20">
+                            <tspan fontWeight="bold" fill="#01256b">
+                              {each.week} {i + 1}
+                            </tspan>
+                          </text>
+                        </svg>
 
                         {/* {each.week} {i + 1} */}
                       </div>
