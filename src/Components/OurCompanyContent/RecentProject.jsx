@@ -8,9 +8,12 @@ function RecentProject() {
     <Container>
       <div className={styles.recentProject}>
         <h3>Take A Look At Our Recent Projects</h3>
-        <p>
+        <p className={styles.desktop}>
           Explore our portfolio of successfully completed projects that showcase
           our expertise and commitment to excellence.
+        </p>
+        <p className={styles.mobile}>
+          Explore our successfully completed projects
         </p>
         <div className={styles.space1}></div>
         <SuccessfulProject />

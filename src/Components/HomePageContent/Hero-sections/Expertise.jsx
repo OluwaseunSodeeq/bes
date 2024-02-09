@@ -183,6 +183,7 @@ function Expertise() {
   return (
     <Container>
       <div className={styles.expertise}>
+        <p>Service</p>
         <h3>Building your Dreams to Life with Our Commitments and Expertise</h3>
         <div className={styles.expertiseContent}>
           <div className={styles.left}>

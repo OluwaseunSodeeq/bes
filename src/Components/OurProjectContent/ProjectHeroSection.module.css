@@ -1,8 +1,9 @@
 .projectHeroSection {
   width: 100%;
-  padding: 0px 0px 50px;
+  padding: 95px 0px 50px;
   margin: 0px;
   text-align: center;
+  height: auto;
 }
 .projectHeroSection > h2 {
   color: #00703c;

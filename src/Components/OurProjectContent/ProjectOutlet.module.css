@@ -1,5 +1,5 @@
 .projectOutlet {
-  padding: 0px;
+  padding: 95px 0px 0px;
   margin: 0px;
   background-color: #fff;
 }
@@ -189,12 +189,22 @@
     flex-direction: column;
   }
   .dot {
-    left: 38.5%;
+    left: 40%;
     bottom: 3.5%;
     width: 7px;
     height: 7px;
   }
   .line {
     height: 95%;
+  }
+}
+@media (max-width: 390px) {
+  .dot {
+    left: 39%;
+  }
+}
+@media (max-width: 360px) {
+  .dot {
+    left: 38.5%;
   }
 }

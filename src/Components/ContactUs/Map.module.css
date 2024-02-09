@@ -1,3 +1,12 @@
+.mapParent {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  padding-top: 95px;
+}
+
 .mapContainer {
   position: relative;
   height: 550px;
@@ -10,13 +19,7 @@
   height: 100%;
   width: 100%;
 }
-.mapParent {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  gap: 20px;
-}
+
 .mapParent button {
   cursor: pointer;
   width: 200px;

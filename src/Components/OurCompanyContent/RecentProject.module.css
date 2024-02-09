@@ -25,6 +25,10 @@
   width: 600px;
   margin: 10px auto 0px;
 }
+.mobile {
+  display: none;
+}
+
 .space {
   height: 32px;
 }
@@ -38,6 +42,12 @@
 @media (max-width: 940px) {
   .recentProject > h3 {
     font-size: 30px;
+  }
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: block;
   }
 }
 

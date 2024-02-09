@@ -4,15 +4,11 @@ function Container({
   children,
   paddingType = "sidePaddings",
   background = "#fff",
-  shadow = false,
-  //   background = "#FAFBFC",
 }) {
-  //   const paddingType = paddingType;
   return (
     <div
       style={{ background }}
-      className={`${styles.container} ${styles[paddingType]} ${
-        shadow ? styles.shadow : ""
+      className={`${styles.container} ${styles[paddingType]}
       } `}
     >
       {children}

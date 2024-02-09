@@ -5,9 +5,7 @@ function Homepage({ setOpen, open }) {
   return (
     <div>
       <Header setOpen={setOpen} open={open} />
-      <>
-        <HeroSection />
-      </>
+      <HeroSection />
     </div>
   );
 }

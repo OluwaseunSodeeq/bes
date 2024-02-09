@@ -22,7 +22,7 @@ function App() {
         <Suspense fallback={<Loader />}>
           <Routes>
             <Route
-              path="/"
+              path="index"
               element={<Homepage setOpen={setOpen} open={open} />}
             />
             <Route

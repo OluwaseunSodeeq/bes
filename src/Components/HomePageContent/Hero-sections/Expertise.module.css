@@ -75,13 +75,17 @@
 .experience {
   padding: 0px;
 }
-.experience > p {
+.experience > p,
+.expertise > p {
   color: #005cb7;
   font-family: "Quicksand", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
   line-height: 24px;
+}
+.expertise > p {
+  display: none;
 }
 .experience > h4 {
   color: #00703c;
@@ -111,6 +115,7 @@
 @media (max-width: 1024px) {
   .expertise > h3 {
     font-style: 24px;
+    margin-left: 0px;
   }
   .expertiseContent,
   .experience {
@@ -154,15 +159,19 @@
     width: 80%;
     font-size: 28px;
   }
+  .expertise > p {
+    display: block;
+  }
   .experience > h4 {
     font-size: 28px;
   }
   .expertise > h3 {
     font-style: 24px;
     line-height: 38px;
+    text-align: left;
   }
   .expertiseCard {
-    width: 340px;
+    width: 320px;
   }
   .successfulProjectsImageDiv div {
     height: 500px;
