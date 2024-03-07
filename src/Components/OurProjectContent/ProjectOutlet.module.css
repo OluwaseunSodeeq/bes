@@ -196,15 +196,23 @@
   }
   .line {
     height: 95%;
+    left: 1%;
   }
 }
 @media (max-width: 390px) {
   .dot {
-    left: 39%;
+    left: 52%;
+  }
+  .line {
+    /* height: 95%; */
+    left: 12%;
   }
 }
 @media (max-width: 360px) {
   .dot {
-    left: 38.5%;
+    left: 49%;
+  }
+  .line {
+    left: 10%;
   }
 }

@@ -429,7 +429,7 @@ function ProjectOutlet({ data }) {
       <Container background="#fff" paddingType="cover">
         <div className={styles.heroImage}>
           {/* <img src={data.img} alt={data.heading} /> */}
-          <img src="../outlet001.png" alt="Image" />
+          <img src="../../outlet001.png" alt="Image" />
         </div>
       </Container>
       <Container background="#fff">
@@ -478,9 +478,16 @@ function ProjectOutlet({ data }) {
                             // fill="#C9ECFB"
                             fillOpacity="0.5"
                           />
-                          <text x="10" y="20">
-                            <tspan fontWeight="bold" fill="#01256b">
-                              {each.week} {i + 1}
+                          <text x="29" y="20">
+                            <tspan
+                              display="flex"
+                              // justifyContent="center"
+                              // textAlign="center"
+                              fontWeight="bold"
+                              fill="#01256b"
+                            >
+                              {/* {each.week} {i + 1} */}
+                              {i + 1}
                             </tspan>
                           </text>
                         </svg>

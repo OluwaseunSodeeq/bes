@@ -1,13 +1,11 @@
 import Header from "../Components/Reusable-Components/Header-Section/Header";
-// import ProjectHeroSection from "../Components/OurProjectContent/ProjectHeroSection";
-import ProjectOutlet from "../Components/OurProjectContent/ProjectOutlet";
+import { Outlet } from "react-router-dom";
 
 function OurProjects({ open, setOpen }) {
   return (
     <div>
       <Header setOpen={setOpen} open={open} />
-      {/* <ProjectHeroSection /> */}
-      <ProjectOutlet />
+      <Outlet />
     </div>
   );
 }

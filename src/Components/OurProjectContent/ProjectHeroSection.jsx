@@ -20,18 +20,21 @@ const clikedBtn = [
 ];
 const projectsData = [
   {
+    id: 0,
     img: "../project002.png",
     heading: "pile foundation",
     text: "151 bore pile foundations, each with a diameter of 600 meters and reaching a depth of 15 meters, situated in Lekki, Lagos.",
     address: "Lekki, Lagos",
   },
   {
+    id: 1,
     img: "../whatimage3.png",
     heading: "Telecommunication",
     text: "151 bore pile foundations, each with a diameter of 600 meters and reaching a depth of 15 meters, situated in Lekki, Lagos.",
     address: "Lekki, Lagos",
   },
   {
+    id: 2,
     img: "../proj1.png",
     heading: "Borehole",
     text: "151 bore pile foundations, each with a diameter of 600 meters and reaching a depth of 15 meters, situated in Lekki, Lagos.",
@@ -39,52 +42,55 @@ const projectsData = [
   },
 
   {
+    id: 3,
     img: "../whatimage3.png",
     heading: "Telecommunication",
     text: "151 bore pile foundations, each with a diameter of 600 meters and reaching a depth of 15 meters, situated in Lekki, Lagos.",
     address: "Lekki, Lagos",
   },
   {
+    id: 4,
     img: "../project-hero.png",
     heading: "Civil Engineering",
     text: "151 bore pile foundations, each with a diameter of 600 meters and reaching a depth of 15 meters, situated in Lekki, Lagos.",
     address: "Lekki, Lagos",
   },
   {
+    id: 5,
     img: "../project002.png",
     heading: "pile foundation",
     text: "151 bore pile foundations, each with a diameter of 600 meters and reaching a depth of 15 meters, situated in Lekki, Lagos.",
     address: "Lekki, Lagos",
   },
   {
+    id: 6,
     img: "../project002.png",
     heading: "pile foundation",
     text: "151 bore pile foundations, each with a diameter of 600 meters and reaching a depth of 15 meters, situated in Lekki, Lagos.",
     address: "Lekki, Lagos",
   },
   {
+    id: 7,
     img: "../proj1.png",
     heading: "Borehole",
     text: "151 bore pile foundations, each with a diameter of 600 meters and reaching a depth of 15 meters, situated in Lekki, Lagos.",
     address: "Lekki, Lagos",
   },
   {
+    id: 8,
     img: "../project003.png",
     heading: "Civil Engineering",
     text: "151 bore pile foundations, each with a diameter of 600 meters and reaching a depth of 15 meters, situated in Lekki, Lagos.",
     address: "Lekki, Lagos",
   },
 ];
+
 function ProjectHeroSection() {
   const [index, setIndex] = useState(0);
-  //   const [currentArray, setCurrentArray] = useState(projectsData);
 
   const handler = (i) => {
-    // setCurrentbtn();
     setIndex(i);
-    // setCurrentArray(index === 0 ? projectsData : curArray);
   };
-  //   console.log(currenBtn);
   const curArray = projectsData
     .filter(
       (each) =>
@@ -92,9 +98,7 @@ function ProjectHeroSection() {
         clikedBtn[index].toLowerCase().slice(0, 3)
     )
     .map((each) => each);
-  //   console.log(curArray, projectsData);
   const currentArray = index === 0 ? projectsData : curArray;
-  //   console.log(curArray, currentArray);
 
   return (
     <Container background="#fff">

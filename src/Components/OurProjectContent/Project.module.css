@@ -1,7 +1,12 @@
+a {
+  text-decoration: none;
+}
 .projCard {
   padding: 0px;
-  width: 390px; /*394*/
+  width: 360px; /*394*/
+  max-width: 394px; /*394*/
   height: auto;
+
   /* border: 2px solid red; */
 }
 .projCard .cardImg {
@@ -36,4 +41,15 @@
 }
 .projCard > p span {
   font-weight: 900;
+}
+@media (max-width: 768px) {
+  .projCard {
+    width: 300px;
+    max-width: 350px;
+  }
+}
+@media (max-width: 450px) {
+  .projCard {
+    width: 100%;
+  }
 }
