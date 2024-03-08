@@ -104,23 +104,33 @@
   -moz-appearance: none;
 }
 
-.contentDiv > .right input,
+.contentDiv > .right > .divColomun input,
 .contentDiv > .right select,
 .contentDiv > .right option {
   width: 100%;
   padding: 16px 24px;
-  background: #fafbfc;
+  background-color: #fafbfc;
   border-radius: 8px;
 }
-.contentDiv > .right div > span {
+.divColomun {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+}
+.contentDiv > .right div > span,
+.contentDiv > .right div > label {
   position: absolute;
+  display: inline;
   right: 10px;
   top: 16px;
+  cursor: pointer;
 }
-
+/* .contentDiv > .right div > label {
+  border: 2px solid red;
+} */
 .contentDiv > .right .textAreaDiv {
   background: #fafbfc;
-  padding-bottom: 30px;
+  /* padding-bottom: 30px; */
 }
 .contentDiv > .right textarea {
   width: 100%;
@@ -131,7 +141,11 @@
   font-size: 17px;
   font-weight: 500;
 }
-
+.contentDiv > .right > .btnDiv {
+  background: #ffffff;
+  padding-top: 30px;
+  /* border: 2px solid red; */
+}
 @media (max-width: 1024px) {
   .companyContentDiv {
     margin-top: 30px;
@@ -154,9 +168,7 @@
   .contentDiv > .right,
   .contentDiv > .left {
     width: 100%;
-    /* margin: 0 auto; */
-    /* width: 90%;
-    margin: 0 auto; */
+
     position: relative;
     padding: 0px;
     /* border: 2px solid red; */

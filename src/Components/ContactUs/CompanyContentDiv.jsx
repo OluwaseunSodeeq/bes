@@ -1,25 +1,40 @@
 // import { useState, useEffect } from "react";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import Container from "../Reusable-Components/Container";
 import styles from "./CompanyContentDiv.module.css";
 import Button from "../Reusable-Components/Button";
+import { useForm } from "react-hook-form";
+import Error from "../Error";
 
 function CompanyContentDiv() {
-  // const [acc, setAcc] = useState(false);
-  const [name, setName] = useState("");
-  const [gmail, setGmail] = useState("Eisoft@gmail.com");
-  const [service, setServices] = useState("");
-  const [textArea, setTextArea] = useState("");
   const [openForm, setOpenForm] = useState(false);
+  const selectRef = useRef(null);
+
+  const textRegex = /^[A-Za-z]+(?:\s+[A-Za-z]+)*$/;
+  const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+  // value.trim().endsWith("@gmail.com")
+
+  const { register, handleSubmit, formState } = useForm();
+  const { errors, isSubmitting } = formState;
+  // console.log(errors);
+
+  const handleLabelClick = () => {
+    selectRef.current.click();
+  };
 
   function handler(e) {
     e.preventDefault();
     setOpenForm((open) => !open);
   }
+
   console.log(openForm);
-  const submitHandler = function (e) {
-    e.preventDefault();
-    console.log("hello", e);
+  const submitHandler = function (data) {
+    console.log("hello", data);
+  };
+
+  const onError = function (errors) {
+    console.log("error", errors);
+    // console.log(errors, emailRegex);
   };
   return (
     <Container>
@@ -116,165 +131,205 @@ function CompanyContentDiv() {
           </ul>
           {/* {newscreenWidth && ( */}
           <form
-            onSubmit={submitHandler}
+            onSubmit={handleSubmit(submitHandler, onError)}
             className={`${styles.right} ${openForm ? styles.open : ""}`}
           >
-            <div className={styles.name}>
-              <input
-                type="text"
-                placeholder="Name"
-                value={name}
-                onChange={(e) => {
-                  e.preventDefault();
-                  setName(e.target.value);
-                }}
-              />
-              <span>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  viewBox="0 0 16 16"
-                  fill="none"
-                >
-                  <path
-                    d="M13.3337 14V12.6667C13.3337 11.9594 13.0527 11.2811 12.5526 10.781C12.0525 10.281 11.3742 10 10.667 10H5.33366C4.62641 10 3.94814 10.281 3.44804 10.781C2.94794 11.2811 2.66699 11.9594 2.66699 12.6667V14M10.667 4.66667C10.667 6.13943 9.47308 7.33333 8.00033 7.33333C6.52757 7.33333 5.33366 6.13943 5.33366 4.66667C5.33366 3.19391 6.52757 2 8.00033 2C9.47308 2 10.667 3.19391 10.667 4.66667Z"
-                    stroke="#CED3DC"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </svg>
-              </span>
+            <div className={styles.divColomun}>
+              <div>
+                <input
+                  type="text"
+                  placeholder="Name"
+                  id="name"
+                  style={{
+                    outlineColor: errors.name ? "red" : "initial",
+                  }}
+                  {...register("name", {
+                    // required: "This field is required",
+                    validate: (value) =>
+                      (value.trim() && textRegex.test(value)) ||
+                      "Please enter only letters (no numbers or symbols).",
+                  })}
+                />
+                <label htmlFor="name">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                  >
+                    <path
+                      d="M13.3337 14V12.6667C13.3337 11.9594 13.0527 11.2811 12.5526 10.781C12.0525 10.281 11.3742 10 10.667 10H5.33366C4.62641 10 3.94814 10.281 3.44804 10.781C2.94794 11.2811 2.66699 11.9594 2.66699 12.6667V14M10.667 4.66667C10.667 6.13943 9.47308 7.33333 8.00033 7.33333C6.52757 7.33333 5.33366 6.13943 5.33366 4.66667C5.33366 3.19391 6.52757 2 8.00033 2C9.47308 2 10.667 3.19391 10.667 4.66667Z"
+                      stroke="#CED3DC"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                </label>
+              </div>
+              {errors?.name?.message && <Error>{errors.name.message}</Error>}
             </div>
-
-            <div className={styles.gmail}>
-              <input
-                disabled
-                type="text"
-                placeholder="Name"
-                value={gmail}
-                onChange={(e) => {
-                  e.preventDefault();
-                  setGmail(e.target.value);
-                }}
-              />
-              <span>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="20"
-                  viewBox="0 0 20 20"
-                  fill="none"
-                >
-                  <path
-                    d="M5.83301 14.1666L14.1663 5.83325M14.1663 5.83325H5.83301M14.1663 5.83325V14.1666"
-                    stroke="#348CD3"
-                    strokeWidth="1.66667"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </svg>
-              </span>
+            <div className={styles.divColomun}>
+              <div className={styles.gmail}>
+                <input
+                  // disabled
+                  type="email"
+                  placeholder="Email"
+                  id="email"
+                  style={{
+                    outlineColor: errors.email ? "red" : "initial",
+                  }}
+                  {...register("email", {
+                    // required: "This field is required",
+                    validate: (value) =>
+                      (value.trim().endsWith("@gmail.com") && emailRegex) ||
+                      "Please enter a valid email address.",
+                  })}
+                />
+                <label htmlFor="email">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                  >
+                    <path
+                      d="M5.83301 14.1666L14.1663 5.83325M14.1663 5.83325H5.83301M14.1663 5.83325V14.1666"
+                      stroke="#348CD3"
+                      strokeWidth="1.66667"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                </label>
+              </div>
+              {errors?.email?.message && <Error>{errors.email.message}</Error>}
             </div>
-
-            <div className={styles.services}>
-              <select
-                id=""
-                value={service}
-                onChange={(e) => setServices(e.target.value)}
+            <div className={styles.divColomun}>
+              <div className={styles.services}>
+                <select
+                  id="option"
+                  {...register("option", {
+                    required: "Please select an option",
+                  })} // Add required validation
+                  style={{ outlineColor: errors.option ? "red" : "initial" }}
+                  ref={selectRef}
+                >
+                  <option value="">Which of our services do you need?</option>
+                  <option value="Project Management Excellence">
+                    Project Management Excellence
+                  </option>
+                  <option value="Borehole Drilling Precision">
+                    Borehole Drilling Precision
+                  </option>
+                  <option value="Geotechnical Insights">
+                    Geotechnical Insights
+                  </option>
+                  <option value="Civil Engineering Mastery">
+                    Civil Engineering Mastery
+                  </option>
+                  <option value="Telecommunication Expertise">
+                    Telecommunication Expertise
+                  </option>
+                  <option value="Piling">Piling</option>
+                </select>
+                <label htmlFor="option" onClick={handleLabelClick}>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                  >
+                    <path
+                      d="M4 6L8 10L12 6"
+                      stroke="#CED3DC"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                </label>
+              </div>
+              {errors.option && (
+                <p style={{ color: "red" }}>{errors.option.message}</p>
+              )}
+            </div>
+            <div className={styles.divColomun}>
+              <div>
+                <div className={styles.textAreaDiv}>
+                  <textarea
+                    name="userMessage"
+                    id="userMessage"
+                    cols="25"
+                    rows="10"
+                    placeholder="Message"
+                    style={{
+                      outlineColor: errors.userMessage ? "red" : "initial",
+                    }}
+                    {...register("userMessage", {
+                      required: "This field is required",
+                      minLength: {
+                        value: 4,
+                        message: "This field cannot be empty",
+                      },
+                    })}
+                  ></textarea>
+                  <label htmlFor="userMessage">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                    >
+                      <path
+                        d="M14 10C14 10.3536 13.8595 10.6928 13.6095 10.9428C13.3594 11.1929 13.0203 11.3333 12.6667 11.3333H4.66667L2 14V3.33333C2 2.97971 2.14048 2.64057 2.39052 2.39052C2.64057 2.14048 2.97971 2 3.33333 2H12.6667C13.0203 2 13.3594 2.14048 13.6095 2.39052C13.8595 2.64057 14 2.97971 14 3.33333V10Z"
+                        stroke="#CED3DC"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                    </svg>
+                  </label>
+                </div>
+              </div>
+              {errors?.userMessage?.message && (
+                <Error>{errors.userMessage.message}</Error>
+              )}
+            </div>
+            <div className={styles.btnDiv}>
+              <Button
+                background="#00703C"
+                color="#FFF"
+                // handler={submitHandler}
+                eventType="Submit"
+                // {}
               >
-                <option value="">Which of our services do you need?</option>
-                <option value="Project Management Excellence">
-                  Project Management Excellence
-                </option>
-                <option value="Borehole Drilling Precision">
-                  Borehole Drilling Precision
-                </option>
-                <option value="Geotechnical Insights">
-                  Geotechnical Insights
-                </option>
-                <option value="Civil Engineering Mastery">
-                  Civil Engineering Mastery
-                </option>
-                <option value="Telecommunication Expertise">
-                  Telecommunication Expertise
-                </option>
-                <option value="Piling">Piling</option>
-              </select>
-              <span>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  viewBox="0 0 16 16"
-                  fill="none"
-                >
-                  <path
-                    d="M4 6L8 10L12 6"
-                    stroke="#CED3DC"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </svg>
-              </span>
+                {isSubmitting ? "Submitting..." : "Lets Talk"}
+
+                <span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="none"
+                  >
+                    <path
+                      d="M4.16699 10.0001H15.8337M15.8337 10.0001L10.0003 4.16675M15.8337 10.0001L10.0003 15.8334"
+                      stroke="white"
+                      strokeWidth="1.67"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                </span>
+              </Button>
             </div>
-            <div className={styles.textAreaDiv}>
-              <textarea
-                name=""
-                id=""
-                cols="30"
-                rows="10"
-                placeholder="Message"
-                value={textArea}
-                onChange={(e) => setTextArea(e.target.value)}
-              ></textarea>
-              <span>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  viewBox="0 0 16 16"
-                  fill="none"
-                >
-                  <path
-                    d="M14 10C14 10.3536 13.8595 10.6928 13.6095 10.9428C13.3594 11.1929 13.0203 11.3333 12.6667 11.3333H4.66667L2 14V3.33333C2 2.97971 2.14048 2.64057 2.39052 2.39052C2.64057 2.14048 2.97971 2 3.33333 2H12.6667C13.0203 2 13.3594 2.14048 13.6095 2.39052C13.8595 2.64057 14 2.97971 14 3.33333V10Z"
-                    stroke="#CED3DC"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </svg>
-              </span>
-            </div>
-            <Button
-              background="#00703C"
-              color="#FFF"
-              handler={submitHandler}
-              eventType="Submit"
-            >
-              Lets Talk
-              <span>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="20"
-                  viewBox="0 0 20 20"
-                  fill="none"
-                >
-                  <path
-                    d="M4.16699 10.0001H15.8337M15.8337 10.0001L10.0003 4.16675M15.8337 10.0001L10.0003 15.8334"
-                    stroke="white"
-                    strokeWidth="1.67"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  />
-                </svg>
-              </span>
-            </Button>
           </form>
-          {/* )} */}
         </div>
       </div>
     </Container>
