@@ -1,19 +1,20 @@
 // App.js
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import { Suspense, lazy, useState } from "react";
+import { Toaster } from "react-hot-toast";
+
 import Loader from "./Components/Reusable-Components/Loader";
 import Footer from "./Components/Footer/Footer";
 import ProjectHeroSection from "./Components/OurProjectContent/ProjectHeroSection";
 import ProjectOutlet from "./Components/OurProjectContent/ProjectOutlet";
 import ProjectRoutes from "./Components/ProjectRoutes";
-import { Toaster } from "react-hot-toast";
 
 const Homepage = lazy(() => import("./Pages/Homepage"));
 const WhatWedo = lazy(() => import("./Pages/WhatWedo"));
 const ContactUs = lazy(() => import("./Pages/ContactUs"));
 const OurProjects = lazy(() => import("./Pages/OurProjects"));
 const OurCompany = lazy(() => import("./Pages/OurCompany"));
-const PageNotFound = lazy(() => import("./Pages/PageNotFound"));
+// const PageNotFound = lazy(() => import("./Pages/PageNotFound"));
 
 function App() {
   const [open, setOpen] = useState(false);
@@ -54,8 +55,6 @@ function App() {
                 path="/contact"
                 element={<ContactUs setOpen={setOpen} open={open} />}
               />
-
-              <Route path="*" element={<PageNotFound />} />
             </Routes>
           </Suspense>
         </BrowserRouter>
@@ -64,7 +63,7 @@ function App() {
       <Toaster
         position="top center"
         guttter={12}
-        containerStyles={{ margin: "8px" }}
+        containerStyles={{ margin: "50px" }}
         toastOptions={{
           success: {
             duration: 3000,
