@@ -1,25 +1,27 @@
 // import { useState, useEffect } from "react";
-import { useRef, useState } from "react";
+import { useState } from "react";
 import Container from "../Reusable-Components/Container";
 import styles from "./CompanyContentDiv.module.css";
 import Button from "../Reusable-Components/Button";
 import { useForm } from "react-hook-form";
 import Error from "../Error";
+import toast from "react-hot-toast";
+import { useSubmit } from "@formspree/react";
 
 function CompanyContentDiv() {
   const [openForm, setOpenForm] = useState(false);
-  const selectRef = useRef(null);
+  // const selectRef = useRef(null);
 
   const textRegex = /^[A-Za-z]+(?:\s+[A-Za-z]+)*$/;
   const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
   // value.trim().endsWith("@gmail.com")
 
-  const { register, handleSubmit, formState } = useForm();
+  const { register, handleSubmit, reset, formState } = useForm();
   const { errors, isSubmitting } = formState;
-  // console.log(errors);
+  const submitForm = useSubmit("");
 
   const handleLabelClick = () => {
-    selectRef.current.click();
+    // selectRef.current.click();
   };
 
   function handler(e) {
@@ -27,14 +29,16 @@ function CompanyContentDiv() {
     setOpenForm((open) => !open);
   }
 
-  console.log(openForm);
   const submitHandler = function (data) {
-    console.log("hello", data);
+    console.log(data);
+    toast.success("Form submitted successfully!");
+    submitForm(data);
+    reset();
   };
 
   const onError = function (errors) {
-    console.log("error", errors);
-    // console.log(errors, emailRegex);
+    console.log(errors);
+    toast.error("Kindly fill the each field correctly");
   };
   return (
     <Container>
@@ -129,7 +133,6 @@ function CompanyContentDiv() {
               <span>+ 84 090 700 788</span>
             </li>
           </ul>
-          {/* {newscreenWidth && ( */}
           <form
             onSubmit={handleSubmit(submitHandler, onError)}
             className={`${styles.right} ${openForm ? styles.open : ""}`}
@@ -213,9 +216,9 @@ function CompanyContentDiv() {
                   id="option"
                   {...register("option", {
                     required: "Please select an option",
-                  })} // Add required validation
+                  })}
                   style={{ outlineColor: errors.option ? "red" : "initial" }}
-                  ref={selectRef}
+                  // ref={selectRef}
                 >
                   <option value="">Which of our services do you need?</option>
                   <option value="Project Management Excellence">
@@ -235,6 +238,7 @@ function CompanyContentDiv() {
                   </option>
                   <option value="Piling">Piling</option>
                 </select>
+
                 <label htmlFor="option" onClick={handleLabelClick}>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -253,8 +257,8 @@ function CompanyContentDiv() {
                   </svg>
                 </label>
               </div>
-              {errors.option && (
-                <p style={{ color: "red" }}>{errors.option.message}</p>
+              {errors?.option?.message && (
+                <Error>{errors.option.message}</Error>
               )}
             </div>
             <div className={styles.divColomun}>

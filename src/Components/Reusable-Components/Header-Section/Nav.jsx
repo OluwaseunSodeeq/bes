@@ -22,10 +22,6 @@ function Nav({ open, setOpen }) {
         <li onClick={() => setOpen(false)} className={styles.contactLink}>
           <NavLink to="/contact">Contact Us</NavLink>
         </li>
-
-        {/* {navItems.map((item) => (
-          <NavItem key={item}>{item}</NavItem>
-        ))} */}
       </ul>
     </nav>
   );

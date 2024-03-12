@@ -100,8 +100,10 @@
   position: relative;
   padding-right: 50px;
   appearance: none;
+  outline-color: #333437;
   -webkit-appearance: none;
   -moz-appearance: none;
+  z-index: 2;
 }
 
 .contentDiv > .right > .divColomun input,
@@ -112,6 +114,10 @@
   background-color: #fafbfc;
   border-radius: 8px;
 }
+.contentDiv > .right > .divColomun input {
+  outline-color: #333437;
+}
+
 .divColomun {
   display: flex;
   flex-direction: column;
@@ -124,12 +130,20 @@
   right: 10px;
   top: 16px;
   cursor: pointer;
+  padding: 0px;
+  z-index: 2;
 }
+
+/* .contentDiv > .right div > label svg {
+  border: 2px solid red;
+} */
 /* .contentDiv > .right div > label {
   border: 2px solid red;
 } */
+
 .contentDiv > .right .textAreaDiv {
   background: #fafbfc;
+
   /* padding-bottom: 30px; */
 }
 .contentDiv > .right textarea {
@@ -140,6 +154,7 @@
   color: #000;
   font-size: 17px;
   font-weight: 500;
+  outline-color: #333437;
 }
 .contentDiv > .right > .btnDiv {
   background: #ffffff;

@@ -6,6 +6,7 @@ import Footer from "./Components/Footer/Footer";
 import ProjectHeroSection from "./Components/OurProjectContent/ProjectHeroSection";
 import ProjectOutlet from "./Components/OurProjectContent/ProjectOutlet";
 import ProjectRoutes from "./Components/ProjectRoutes";
+import { Toaster } from "react-hot-toast";
 
 const Homepage = lazy(() => import("./Pages/Homepage"));
 const WhatWedo = lazy(() => import("./Pages/WhatWedo"));
@@ -19,45 +20,68 @@ function App() {
 
   return (
     <div className="app">
-      <BrowserRouter>
-        <Suspense fallback={<Loader />}>
-          <Routes>
-            <Route
-              path="/"
-              element={<Homepage setOpen={setOpen} open={open} />}
-            />
-            <Route
-              path="/whatwedo"
-              element={<WhatWedo setOpen={setOpen} open={open} />}
-            />
-            <Route
-              path="/ourcompany"
-              element={<OurCompany setOpen={setOpen} open={open} />}
-            />
+      <div>
+        <BrowserRouter>
+          <Suspense fallback={<Loader />}>
+            <Routes>
+              <Route
+                path="/"
+                element={<Homepage setOpen={setOpen} open={open} />}
+              />
+              <Route
+                path="/whatwedo"
+                element={<WhatWedo setOpen={setOpen} open={open} />}
+              />
+              <Route
+                path="/ourcompany"
+                element={<OurCompany setOpen={setOpen} open={open} />}
+              />
 
-            <Route
-              path="/ourprojects"
-              element={
-                <ProjectRoutes>
-                  <OurProjects setOpen={setOpen} open={open} />
-                </ProjectRoutes>
-              }
-            >
-              <Route index element={<Navigate replace to="projects" />} />
-              <Route path="projects" element={<ProjectHeroSection />} />
-              <Route path="projects/:id" element={<ProjectOutlet />} />
-            </Route>
+              <Route
+                path="/ourprojects"
+                element={
+                  <ProjectRoutes>
+                    <OurProjects setOpen={setOpen} open={open} />
+                  </ProjectRoutes>
+                }
+              >
+                <Route index element={<Navigate replace to="projects" />} />
+                <Route path="projects" element={<ProjectHeroSection />} />
+                <Route path="projects/:id" element={<ProjectOutlet />} />
+              </Route>
 
-            <Route
-              path="/contact"
-              element={<ContactUs setOpen={setOpen} open={open} />}
-            />
+              <Route
+                path="/contact"
+                element={<ContactUs setOpen={setOpen} open={open} />}
+              />
 
-            <Route path="*" element={<PageNotFound />} />
-          </Routes>
-        </Suspense>
-      </BrowserRouter>
-      <Footer />
+              <Route path="*" element={<PageNotFound />} />
+            </Routes>
+          </Suspense>
+        </BrowserRouter>
+        <Footer />
+      </div>
+      <Toaster
+        position="top center"
+        guttter={12}
+        containerStyles={{ margin: "8px" }}
+        toastOptions={{
+          success: {
+            duration: 3000,
+          },
+          error: {
+            duration: 5000,
+          },
+          style: {
+            fontSize: "16px",
+            maxWidth: "500px",
+            padding: "8px 12px",
+            backgroundColor: "#ffffff",
+            // color: "#333437",
+            color: "#67696E",
+          },
+        }}
+      />
     </div>
   );
 }
