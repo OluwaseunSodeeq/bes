@@ -17,7 +17,7 @@
   left: 0;
   margin: auto;
   border-radius: 50%;
-  animation: zoomInOut 3s linear infinite;
+  animation: zoomInOut 1.5s linear infinite;
 }
 
 @keyframes zoomInOut {
