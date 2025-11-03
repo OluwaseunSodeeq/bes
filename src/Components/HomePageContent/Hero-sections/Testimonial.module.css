@@ -55,6 +55,10 @@
   margin: 0 auto;
   color: #fff;
   font-size: 30px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .testimonialCard > .rating {
   margin-top: 20px;

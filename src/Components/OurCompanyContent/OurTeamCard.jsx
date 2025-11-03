@@ -6,9 +6,11 @@ function OurTeamCard() {
       <div className={styles.imgDiv}>
         <img src="../team001.png" alt="A Team Member" />
       </div>
+
       <div className={styles.contentDiv}>
         <h3>Jimoh Monsuru</h3>
         <h6>Director</h6>
+
         <ul className={styles.cardIcons}>
           <li>
             <svg

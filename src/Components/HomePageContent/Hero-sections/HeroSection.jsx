@@ -8,6 +8,7 @@ import WhyChooseUs from "./WhyChooseUs";
 import ExperienceInAction from "./ExperienceInAction";
 import Team from "./Team";
 import Testimonial from "./Testimonial";
+import { Link } from "react-router-dom";
 
 function HeroSection() {
   return (
@@ -44,9 +45,12 @@ function HeroSection() {
               We Deliver Solutions That Build Success.
               <span>&quot;</span>
             </p>
-            <Button background="#00703C" color="#FAFBFC" btnType="header">
-              Get A Free Quote
-            </Button>
+            <Link to="/contact">
+              <Button background="#00703C" color="#FAFBFC" btnType="header">
+                {/* Get A Free Quote */}
+                Reach Out!
+              </Button>
+            </Link>
           </div>
           <div className={styles.heroSectionRight}>
             <div className={styles.heroSectionRightImage}>

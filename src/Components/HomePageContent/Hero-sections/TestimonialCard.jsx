@@ -2,8 +2,8 @@ import styles from "./Testimonial.module.css";
 
 function TestimonialCard({ client, i }) {
   // const maxrating = client.rating
-  const maxRating = 5;
   console.log(client);
+  const maxRating = 5;
   return (
     <div className={styles.testimonialCard}>
       <span>
