@@ -48,7 +48,7 @@ function HeroSection() {
             <Link to="/contact">
               <Button background="#00703C" color="#FAFBFC" btnType="header">
                 {/* Get A Free Quote */}
-                Reach Out!
+                <span style={{ fontStyle: "italic" }}>Reach Out! </span>
               </Button>
             </Link>
           </div>
@@ -75,6 +75,3 @@ function HeroSection() {
 }
 
 export default HeroSection;
-{
-  /* <SummaryOfJobs /> */
-}
