@@ -1,8 +1,11 @@
 {
   "name": "bes",
-  "private": true,
   "version": "0.0.0",
+  "private": true,
   "type": "module",
+  "engines": {
+    "node": "22.x"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
